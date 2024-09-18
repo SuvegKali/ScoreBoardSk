@@ -1,0 +1,93 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Body styling */
+body {
+    background-color: #1A2948; /* Navy blue background */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Empty state container */
+.empty-state {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+/* Score sections */
+.team-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* Team names styling */
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Screen styles for home and guest */
+.home-screen, .guest-screen {
+    width: 150px;
+    height: 100px;
+    background-color: #000000; /* Black screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Score number inside the screen */
+.home-screen p, .guest-screen p {
+    font-size: 5rem;
+    color: #FF4C4C; /* Bright red color for the score */
+    font-family: 'Digital-7 Mono', sans-serif;
+    letter-spacing: 3px;
+}
+
+/* Button container */
+.home-btn, .guest-btn {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons styling */
+button {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid #5468FF; /* Light blue border */
+    border-radius: 10px;
+    color: #5468FF;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5468FF;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .empty-state {
+        flex-direction: column;
+        align-items: center;
+    }
+}
